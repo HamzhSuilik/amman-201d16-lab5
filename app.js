@@ -105,17 +105,39 @@ function sumArray(sumArr) {
 
 /////////////////////////////////////
 /* Problem 5
-Write a function called multiplyArray() that takes an array of numbers as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
+Write a function called multiplyArray() that takes an array of numbers as its argument and returns an array whose 
+first element :
+is the product of those numbers, 
+and the second element :
+ is a string that EXACTLY follows this example and uses the values that were input into the function:
 
 "The numbers 2,3,4 have a product of 24."
 
-IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To do multiplication, use your multiply() function that you've already created. You're going to have to be resourceful to figure out how to do this. This function should handle an array containing three elements. However, you may continue to use the + operator for string concatenation.
+IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To do multiplication,
+ use your multiply() function that you've already created. You're going to have to be resourceful to figure out how to do this. 
+ This function should handle an array containing three elements. However, you may continue to use the + operator for string 
+ concatenation.
 
-Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
+Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for 
+the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
 function multiplyArray(multArr) {
-  //eslint-disable-line
+  
+  let mult =1;
+  for (let index = 0; index < multArr.length; index++) {
+    mult = mult * multArr[index];
+  }
+  let text = 'The numbers ';
+  for (let index = 0; index < (multArr.length-1); index++) {
+    text =text + multArr[index];
+    text =text +',';
+  }
+  text =text + multArr[multArr.length-1];
+  text =text +' have a product of ';
+  text =text + mult +'.';
+  
+  return[mult,text];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
