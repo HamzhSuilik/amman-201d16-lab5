@@ -14,6 +14,8 @@ function sum(a, b) {
   return [result,'The sum of '+a+' and '+b+' is '+result+'.'];
 }
 
+
+
 // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
 
@@ -27,14 +29,17 @@ Write a function called multiply() that takes in two numbers as arguments and re
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
-// testMultiply()
+//testMultiply();
 
 // Write your code here
+
 function multiply(a, b) {
   //eslint-disable-line
-  let result2 =a*b;
-  return [result2,'The product of '+a+' and '+b+' is '+result2+'.'];
+  let result =a+b;
+  return [result,'The sum of '+a+' and '+b+' is '+result+'.'];
 }
+
+
 
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
@@ -59,6 +64,8 @@ function sumAndMultiply(a, b, c) {
   let multiply = a * b * c;
   return [sum,multiply, a+' and '+b+' and '+c+' sum to '+sum+'.','The product of '+a+' and '+b+' and '+c+' is '+multiply+'.'];
 }
+
+//sumAndMultiply();
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 // testSumAndMultiply(4,7,5);
@@ -96,7 +103,7 @@ function sumArray(sumArr) {
 
   return [sum,text];
 }
-
+//(testArray);
 // Here is the test for sumArray(); uncomment it to run it
 
 // testSumArray(testArray);
@@ -139,6 +146,8 @@ function multiplyArray(multArr) {
   
   return[mult,text];
 }
+
+//multiplyArray();
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
@@ -203,3 +212,9 @@ function multiplyAnyArray(dynamicArray) {
 // testMultiplyAnyArray(testDynamicArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
+
+testSum();
+testMultiply();
+testSumAndMultiply();
+testSumArray();
+testMultiplyArray();
