@@ -35,10 +35,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 function multiply(a, b) {
   //eslint-disable-line
-  let result =a+b;
-  return [result,'The sum of '+a+' and '+b+' is '+result+'.'];
+  let result =a*b;
+  return [result,'The product of '+a+' and '+b+' is '+result+'.'];
 }
-
 
 
 // Here is the test for multiply(); uncomment it to run it
@@ -182,7 +181,7 @@ the testMultiplyAnyArray() function and see if the test passes.*/
 // Write your code here
 let testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
 
-function multiply(array){
+function multiply2(array){
   let mult =1;
   for (let index = 0; index < array.length; index++) {
     mult = mult * array[index];
@@ -203,7 +202,7 @@ function get_text(multArr,mult){
 }
 
 function multiplyAnyArray(dynamicArray) {
-  let mult= multiply(dynamicArray);
+  let mult= multiply2(dynamicArray);
 
   return[mult,get_text(dynamicArray,mult)];
 }
@@ -214,7 +213,7 @@ function multiplyAnyArray(dynamicArray) {
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
 
 testSum();
-testMultiply();
+
 testSumAndMultiply();
 testSumArray();
 testMultiplyArray();
